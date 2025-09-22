@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flores para Raquel</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      text-align: center;
+      color: #FFD700;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #1a1a1a;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 32px;
+      text-shadow: 2px 2px 8px #000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .flores {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 40px;
+      z-index: 2;
+    }
+
+    .flor {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      animation: girar 6s linear infinite;
+    }
+
+    @keyframes girar {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    .petalo {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: radial-gradient(circle at 30% 30%, #fff176, #fbc02d, #fdd835);
+      border-radius: 50%;
+      top: 25px;
+      left: 25px;
+      transform-origin: 35px 35px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .petalo:nth-child(1) { transform: rotate(0deg) translateX(40px); }
+    .petalo:nth-child(2) { transform: rotate(45deg) translateX(40px); }
+    .petalo:nth-child(3) { transform: rotate(90deg) translateX(40px); }
+    .petalo:nth-child(4) { transform: rotate(135deg) translateX(40px); }
+    .petalo:nth-child(5) { transform: rotate(180deg) translateX(40px); }
+    .petalo:nth-child(6) { transform: rotate(225deg) translateX(40px); }
+    .petalo:nth-child(7) { transform: rotate(270deg) translateX(40px); }
+    .petalo:nth-child(8) { transform: rotate(315deg) translateX(40px); }
+
+    .centro {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: radial-gradient(circle, #fbc02d, #f57f17);
+      border-radius: 50%;
+      top: 35px;
+      left: 35px;
+      box-shadow: 0 0 12px rgba(251,192,45,0.9);
+    }
+
+    #botonMusica {
+      background-color: #fbc02d;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.2s;
+      margin-bottom: 30px;
+    }
+
+    #botonMusica:hover {
+      transform: scale(1.1);
+    }
+
+    .mensaje {
+      max-width: 700px;
+      color: #FFD700;
+      font-size: 18px;
+      text-shadow: 1px 1px 5px #000;
+      line-height: 1.6;
+      margin-bottom: 50px;
+      padding: 0 20px;
+      white-space: pre-wrap;
+    }
+
+    .foto {
+      margin-bottom: 30px;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🌻 Para Ti: Mi Doctora Hermosa, Raquel Franco 🌻</h1>
+
+  <div class="flores">
+    <div class="flor">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
+    </div>
+
+    <div class="flor">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
+    </div>
+
+    <div class="flor">
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="petalo"></div><div class="petalo"></div><div class="petalo"></div><div class="petalo"></div>
+      <div class="centro"></div>
+    </div>
+  </div>
+
+  <!-- Foto de Raquel -->
+  <img src="raquel.jpeg" alt="Mi Doctora Hermosa" class="foto">
+
+  <!-- Botón para reproducir música -->
+  <button id="botonMusica">🎵 Toca aquí para escuchar tu canción</button>
+
+  <!-- Mensaje largo -->
+  <div class="mensaje">
+Mi amor, hoy quiero aprovechar este día tan especial para decirte lo mucho que significas para mí 🫶🏼❤️
+
+No solo por el Día del Amor, ademas que un capibara 😆 me dijo que también el Día del Médico 🙆🏻‍♀️❤️, y de las flores amarillas, tantas cosas jaja 🤣 y no puedo dejar pasar por alto, en saber lo afortunado que soy de tener a mi doctora favorita en mi vida. 🥰❤️
+
+Sé que a veces no puedo verte tanto como quisiera, y que de momento no pueda entregarte un ramo de flores o pequeños detalles en persona… pero quiero que sepas algo: eso nunca será un límite para mi amor por ti. Todo lo que esté a mi alcance, todo lo que pueda hacer, cada palabra, cada gesto, cada detalle, será para ti. 🙈❤️
+
+No hay distancia ni momento que pueda disminuir lo que siento; cada día, mi corazón siente mil maneras de demostrártelo. 😍❤️
+
+Hoy quiero recordarte que siempre tendrás en mí un apoyo incondicional, un amor sincero y correcto. Una admiración que crece cada día por mi novia, Por Mi Niña 💗 🥹❤️
+
+Gracias por ser Mi Doctora, Mi compañera, Mi Fabulosa Novia y La Futura Mama de mis Hijos. Que este Día del Amor y del Médico (y de las flores amarillas hehe) sea un recordatorio de que, aunque a veces no pueda darte algo en persona o no pueda estar a tu lado, Me Dare La Forma De Hacerte Saber Cuanto Te Amo. ❤️✨
+
+Siento asi por ti, y no hay nada que me haga reflexionar que lo mas bonito de nuestra relacion es marcar diferencia, mas alla de una tendencia temporal hacer lo correcto a realmente comprender que por mi parte voy a cuidarte sin excusas. 🙏🏼❤️
+
+Hay un poder en nuestra relacion Raquelita, un potencial que no quiero perder por pecados temporales, estoy enamorado de la mujer que eres y se que puedo sumar a tu vida como tu a la mia 🫶🏼❤️
+
+Y si, te amo lo suficiente como para agradar a Dios con lo que tenemos y no lo opuesto. 🙏🏼
+
+Te amo profundamente, y celebraré siempre cada momento a tu lado, incluso en la distancia. ¡Feliz día, Mi Vida! ❤️👩🏻‍⚕💖📖
+  </div>
+
+  <!-- Música -->
+  <audio id="musica" loop>
+    <source src="https://drive.google.com/uc?export=download&id=1w9_B6dQ61e0WPhPJoRfShRccbZxJGkCB" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script>
+    const musica = document.getElementById("musica");
+    musica.volume = 0.4; // volumen al 40%
+    const boton = document.getElementById("botonMusica");
+
+    function reproducirMusica() {
+      musica.play().catch(()=>{}); // evita errores si hay bloqueo
+      boton.style.display = "none"; // oculta el botón
+    }
+
+    // Soporta click y touchstart para móviles
+    boton.addEventListener("click", reproducirMusica);
+    boton.addEventListener("touchstart", reproducirMusica);
+  </script>
+
+</body>
+</html>
+SOLO BORRAS ESTO
